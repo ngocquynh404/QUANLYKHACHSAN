@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="712.0" stylesheets="@../styles/hoadonstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.Controller.FXMLHoaDonController">
+   <children>
+      <ScrollPane layoutY="35.0" prefHeight="565.0" prefWidth="712.0">
+         <content>
+            <AnchorPane prefHeight="990.0" prefWidth="700.0" stylesheets="@../styles/hoadonstyles.css">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="970.0" prefWidth="680.0" styleClass="main-form" stylesheets="@../styles/hoadonstyles.css">
+                     <children>
+                        <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="960.0" prefWidth="670.0" styleClass="main-form" stylesheets="@../styles/hoadonstyles.css">
+                           <children>
+                              <Label layoutX="231.0" layoutY="36.0" text="HÓA ĐƠN THANH TOÁN">
+                                 <font>
+                                    <Font name="Candara Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="53.0" fitWidth="88.0" layoutX="34.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/verknupfungsskript-app.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="34.0" layoutY="68.0" text="YanTel" textFill="#1f95aa">
+                                 <font>
+                                    <Font name="Candara Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="296.0" layoutY="59.0" text="Electronic invoice">
+                                 <font>
+                                    <Font name="Candara Italic" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="259.0" layoutY="77.0" prefHeight="20.0" prefWidth="145.0" text="Ngày: dd/mm/yyyy hh:mm:ss">
+                                 <font>
+                                    <Font name="Candara" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="572.0" layoutY="5.0" prefHeight="20.0" prefWidth="92.0" text="Mã HD: ******">
+                                 <font>
+                                    <Font name="Candara" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="550.0" layoutY="25.0" prefHeight="20.0" prefWidth="115.0" text="Mã chi tiết: ******">
+                                 <font>
+                                    <Font name="Candara" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="315.6119384765625" layoutX="335.0" layoutY="100.0" startX="-307.6716613769531" />
+                              <Label layoutX="27.0" layoutY="108.0" text="Đơn vị cung cấp">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="108.0" text="(Seller):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="174.0" layoutY="108.0" text="Khách sạn YanTel">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="126.0" text="Mã số thuế">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="92.0" layoutY="126.0" text="(Tax code):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="165.0" layoutY="126.0" text="011*******">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="332.0" layoutY="126.0" text="Địa chỉ">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="374.0" layoutY="126.0" text="(Address):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="442.0" layoutY="126.0" text="Số 141, đường **********************">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="144.0" text="Số điện thoại">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="103.0" layoutY="144.0" text="(Tel):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="145.0" layoutY="144.0" text="098*******">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="332.0" layoutY="144.0" text="Email:">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="380.0" layoutY="144.0" text="*****@gmail.com">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="162.0" text="Số tài khoản">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="100.0" layoutY="162.0" text="(Account No.):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="188.0" layoutY="162.0" text="3141*******">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="333.0" layoutY="162.0" text="Ngân hàng">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="398.0" layoutY="162.0" text="(Bank):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="450.0" layoutY="162.0" text="BIDV">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="192.0" text="Họ tên khách hàng">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="134.0" layoutY="192.0" text="(Customer's name):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="251.0" layoutY="192.0" text="Ma Thị Ngọc Quỳnh">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="210.0" text="Số điện thoại">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="104.0" layoutY="210.0" text="(Tel):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="143.0" layoutY="210.0" text="011*******">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="228.0" text="CCCD/Passport">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="114.0" layoutY="228.0" text="(Citizen identification/Passport):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="295.0" layoutY="228.0" text="054*********">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="410.0" layoutY="228.0" text="Quốc tịch">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="468.0" layoutY="228.0" text="(Nationality):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="549.0" layoutY="228.0" text="Việt Nam">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="246.0" text="Hình thức thanh toán">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="250.0" layoutY="246.0" text="Chuyển khoản">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="142.0" layoutY="246.0" text="(Payment method):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="315.6119384765625" layoutX="334.0" layoutY="186.0" startX="-307.6716613769531" />
+                              <Line endX="315.6119384765625" layoutX="335.0" layoutY="288.0" startX="-307.6716613769531" />
+                              <TableView layoutY="315.0" prefHeight="111.0" prefWidth="668.0">
+                                 <columns>
+                                    <TableColumn prefWidth="35.820892333984375" text="STT" />
+                                    <TableColumn prefWidth="120.35820770263672" text="Loại phòng" />
+                                    <TableColumn prefWidth="72.35824584960938" text="Số lượng" />
+                                    <TableColumn prefWidth="190.567138671875" text="Phòng" />
+                                    <TableColumn prefWidth="102.44778442382812" text="Giá phòng" />
+                                    <TableColumn prefWidth="154.02984619140625" text="Thành tiền" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="27.0" layoutY="264.0" text="Checkin:">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="84.0" layoutY="264.0" text="dd/mm/yyyy hh:mm:ss">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="276.0" layoutY="264.0" text="Checkout:">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="341.0" layoutY="264.0" text="dd/mm/yyyy hh:mm:ss">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="297.0" text="Danh sách phòng thuê">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TableView layoutY="453.0" prefHeight="125.0" prefWidth="668.0">
+                                 <columns>
+                                    <TableColumn prefWidth="35.820892333984375" text="STT" />
+                                    <TableColumn prefWidth="191.28353118896484" text="Tên sản phẩm/dịch vụ" />
+                                    <TableColumn prefWidth="69.49249267578125" text="Phòng" />
+                                    <TableColumn minWidth="0.0" prefWidth="70.92529296875" text="Đơn vị tính" />
+                                    <TableColumn prefWidth="69.49249267578125" text="Số lượng" />
+                                    <TableColumn prefWidth="87.40298461914062" text="Đơn giá" />
+                                    <TableColumn prefWidth="148.29852294921875" text="Thành tiền" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="27.0" layoutY="435.0" text="Danh sách dịch vụ/san pham">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TableView layoutY="607.0" prefHeight="149.0" prefWidth="668.0">
+                                 <columns>
+                                    <TableColumn prefWidth="35.820892333984375" text="STT" />
+                                    <TableColumn minWidth="0.0" prefWidth="111.76119232177734" text="Loại phí" />
+                                    <TableColumn prefWidth="282.26861572265625" text="Lý do phát sinh" />
+                                    <TableColumn prefWidth="89.55227661132812" text="Phòng" />
+                                    <TableColumn minWidth="0.0" prefWidth="151.880615234375" text="Thành tiền" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="27.0" layoutY="589.0" text="Phí phát sinh khác/Giảm trừ">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Line endX="296.9403076171875" layoutX="370.0" layoutY="780.0" startX="-370.0" stroke="#16a397" />
+                              <Line endX="296.9403076171875" layoutX="370.0" layoutY="806.0" startX="-370.0" stroke="#16a397" />
+                              <Line endX="296.9403076171875" layoutX="370.0" layoutY="832.0" startX="-370.0" stroke="#16a397" />
+                              <Line endX="296.9403076171875" layoutX="370.0" layoutY="858.0" startX="-370.0" stroke="#16a397" />
+                              <Line endX="100.0" endY="-59.1343994140625" layoutX="422.0" layoutY="891.0" startX="100.0" startY="-134.98504638671875" stroke="#16a397" />
+                              <Line endX="100.0" endY="-68.5" layoutX="144.0" layoutY="901.0" startX="100.0" startY="-94.5" stroke="#16a397" />
+                              <Label layoutX="387.0" layoutY="760.0" text="Tổng tiền">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="441.0" layoutY="760.0" text="(Total amount):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="446.0" layoutY="785.0" text="(VAT amount):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="436.0" layoutY="811.0" text="(Total payment):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="386.0" layoutY="785.0" text="Thuế GTGT">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="322.0" layoutY="811.0" text="Tổng tiền thanh toán">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="107.0" layoutY="811.0" text="(VAT rate):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="811.0" text="Thuế GTGT">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="169.0" layoutY="811.0" text="10%">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="121.0" layoutY="837.0" text="(Amount in words):">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="7.0" layoutY="837.0" text="Số tiền viết bằng chữ">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="509.0" layoutY="869.0" text="Đơn vị cung cấp">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="533.0" layoutY="885.0" text="(Seller)">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="88.0" layoutY="869.0" text="Khách hàng">
+                                 <font>
+                                    <Font name="Candara Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="90.0" layoutY="885.0" text="(Customer)">
+                                 <font>
+                                    <Font name="Candara Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="35.0" prefWidth="712.0" styleClass="top-form" stylesheets="@../styles/hoadonstyles.css">
+         <children>
+            <Button fx:id="btn_exit" alignment="CENTER" contentDisplay="CENTER" layoutX="672.0" layoutY="4.0" mnemonicParsing="false" onAction="#btn_exit_Click" prefHeight="27.0" prefWidth="39.0" styleClass="close" stylesheets="@../styles/mainformstyles.css" textFill="#106666">
+               <graphic>
+                  <FontAwesomeIcon fill="#248380" glyphName="CLOSE" size="1.5em" textAlignment="CENTER" />
+               </graphic>
+            </Button>
+            <Button layoutX="11.0" layoutY="4.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="26.0" styleClass="signal_btn" stylesheets="@../styles/mainformstyles.css">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/diskette.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <Button layoutX="50.0" layoutY="3.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="29.0" styleClass="signal_btn" stylesheets="@../styles/mainformstyles.css">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/printer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="1.0" left="-1.0" right="1.0" top="1.0" />
+               </padding>
+            </Button>
+            <JFXButton alignment="CENTER" layoutX="90.0" layoutY="3.0" onAction="#btnPhieuTichDiem_Click" prefHeight="29.0" prefWidth="96.0" style="-fx-border-color: #16a397;" text="Tích điểm" textFill="#08583d">
+               <graphic>
+                  <FontAwesomeIcon fill="#53a580" glyphName="PLUS_CIRCLE" size="1.5em" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.179104804992676" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

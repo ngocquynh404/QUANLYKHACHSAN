@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="295.0" prefWidth="443.0" styleClass="main-form" stylesheets="@../styles/themkhachhangstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.Controller.FXMLChiTietPhong_ThietBiController">
+   <children>
+      <VBox layoutX="4.2985073403171326" layoutY="4.2985073403171326" prefHeight="295.0" prefWidth="443.4626739427175" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="35.0" prefWidth="200.0" styleClass="top-form" stylesheets="@../styles/themkhachhangstyles.css">
+               <children>
+                  <Label layoutX="9.0" layoutY="5.0" text="Thiêt bi theo phòng" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_exit" layoutX="398.0" layoutY="3.0" mnemonicParsing="false" onAction="#btn_exit_Click" prefHeight="27.0" prefWidth="39.0" styleClass="close" stylesheets="@../styles/mainformstyles.css">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.5em" textAlignment="CENTER" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="216.0" prefWidth="611.0">
+               <children>
+                  <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="198.0" prefWidth="423.0" stylesheets="@../styles/themkhachhangstyles.css">
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="10.0" layoutY="18.0" text="Phòng" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="55.0" text="Thêm thiêt bi" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="100.0" layoutY="11.0" prefHeight="29.0" prefWidth="280.0" />
+                        <ComboBox layoutX="100.0" layoutY="48.0" prefHeight="29.0" prefWidth="280.0" />
+                        <JFXButton fx:id="btnThemKH112" contentDisplay="GRAPHIC_ONLY" layoutX="393.0" layoutY="53.0" onAction="#btnThemKH_Click" prefHeight="0.0" prefWidth="12.0">
+                           <padding>
+                              <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                           </padding>
+                           <graphic>
+                              <FontAwesomeIcon fill="RED" glyphName="MINUS_SQUARE" size="1.5em" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="39.0" prefWidth="611.0">
+               <children>
+                  <JFXButton fx:id="btnLuu" layoutX="257.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-save" stylesheets="@../styles/themkhachhangstyles.css" text="Lưu" />
+                  <JFXButton fx:id="btnHuy" layoutX="340.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-cancle" stylesheets="@../styles/themkhachhangstyles.css" text="Hủy" />
+                  <JFXButton fx:id="btnLuuThem" layoutX="159.0" prefHeight="30.0" prefWidth="92.0" styleClass="button-save-add" stylesheets="@../styles/themkhachhangstyles.css" text="Chỉnh sửa" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

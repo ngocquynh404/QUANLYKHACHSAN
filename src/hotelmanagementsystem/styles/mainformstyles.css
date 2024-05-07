@@ -1,0 +1,233 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 17, 2024, 7:54:01 AM
+    Author     : nguye
+*/
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .2px .4px;
+}
+
+.semi-top-form{
+    -fx-background-color:#efefef;
+    -fx-border-color:#000;
+    -fx-border-width:.2px .4px .4px .4px;
+}
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.close:hover{
+    -fx-background-color:#fb3d63;
+}
+
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.minimize:hover{
+    -fx-background-color:#ddd;
+}
+
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right, #2d658c, #2ca772);
+}
+
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill:#fff;
+    -fx-font-size:15px;
+    -fx-font-family:"Century Gothic";
+    -fx-font-weight: bold;
+    -fx-alignment:CENTER-LEFT;
+}
+
+.logout{
+    -fx-background-color:#2c84bf;
+    -fx-background-radius:10px;
+    -fx-cursor:hand;
+}
+
+.logout:hover{
+    -fx-background-color:#1593e7;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4), 6,0,0,0);
+}
+
+.white-bg{
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+}
+
+.signal_btn{
+    -fx-background-color: transparent;
+    -fx-font-family: "Candara";
+    -fx-font-size: 10;
+    -fx-graphic-text-gap: 10;
+    -fx-font-size: 18px;
+    -fx-cursor: hand;
+}
+
+* {
+    -fx-primary-color: #007acc;
+    -fx-secondary-color: #4B6EAF;
+    -fx-light-grey-color: #d1d1d1;
+
+    -fx-focus-color: -fx-secondary-color;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: -fx-primary-color;
+    -fx-background-radius: 0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: -fx-secondary-color;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+.date-picker .cell {
+    -fx-background-color: white;
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: -fx-light-grey-color;
+}
+
+.date-picker .cell:focused {
+    -fx-background-color: -fx-light-grey-color;
+}
+
+.date-picker .selected {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+
+.date-picker .selected:focused {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+}
+
+.date-picker-popup  {
+    -fx-border-width: .5px;
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: -fx-primary-color;
+}
+
+.date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+
+.date-picker-popup .week-number-cell {
+    -fx-text-fill: -fx-secondary-color;
+}
+
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: white;
+}
+
+.btn-top-form{
+    -fx-background-color: linear-gradient(to right, #344250, #3c6382);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.grid-pane{
+    -fx-background-color: #344250;
+}
+
+.grid-pane-empty{
+    -fx-background-color: #fff;
+}
+
+.lbl-main-form{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;    
+    -fx-font-size: 16px;
+    -fx-font-family: "Century Gothic";
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view{
+    -fx-background-color:transparent;
+    -fx-padding:0px;
+    -fx-border-color:linear-gradient(to bottom right, #2d658c, #2ca772);
+    -fx-border-width:2px;
+    -fx-border-radius:8px;
+}
+.table-view .table-column{
+    -fx-alignment: CENTER;
+}
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right, #2d658c, #2ca772);
+    -fx-background-radius:8px 8px 0px 0px;
+    -fx-background-inset: 0 0 0 0;
+}
+.table-view .column-header, .filter{
+    -fx-background-color:transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+}
+
+.tab-header-area .tab-header-background {
+ 	/*-fx-background-color: #6C7D8F;*/
+        -fx-background-color:linear-gradient(to bottom right, #1d7283, #2ca772);
+        
+}
+.tab-pane .tab:selected {
+	/*-fx-background-color: #526375;*/
+        -fx-background-color: #1D4460;
+	-fx-background-insets: 0 0 0 0;
+	-fx-background-radius: 0 0 0 0;
+}
+.tab .tab-label { 
+ 	-fx-alignment: CENTER;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-padding: 0 10 0 10;
+}
+.tab-pane:top *.tab-header-area {
+	-fx-padding: 0 0 0 30;
+}
+.tab-pane {
+	-fx-background-color: transparent;
+	-fx-tab-min-width: 100px;
+	-fx-tab-min-height: 35px;
+	-fx-tab-max-height: 35px;
+}
+.tab-pane .tab {
+	-fx-background-color: transparent;
+}
+.tab-pane:focused .tab-header-area .headers-region .tab:selected .focus-indicator {
+ 	-fx-border-width: 0;
+	-fx-border-insets: 0 0 0 0;
+	-fx-border-radius: 0;
+}
+.tab-pane .tab:focused {
+    /*-fx-background-color: #526375; /* Màu nền khi focus vào tab */
+    -fx-background-color: #1D4460;
+}

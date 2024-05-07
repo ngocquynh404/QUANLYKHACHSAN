@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="594.0" prefWidth="635.0" styleClass="main-form" stylesheets="@../styles/datphongstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.Controller.FXMLCauHinhGiaPhongController">
+   <children>
+      <BorderPane layoutX="169.0" layoutY="113.0" prefHeight="588.8955056234472" prefWidth="635.4626684768829" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="35.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="155.0" layoutY="-86.0" prefHeight="114.62686240845687" prefWidth="710.6865469324326" styleClass="top-form" stylesheets="@../styles/datphongstyles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="9.0" layoutY="5.0" text="Câu hình giá phòng" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_exit" layoutX="590.0" layoutY="4.0" mnemonicParsing="false" onAction="#btn_exit_Click" prefHeight="27.0" prefWidth="39.0" styleClass="close" stylesheets="@../styles/mainformstyles.css">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.5em" textAlignment="CENTER" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="447.0" prefWidth="255.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="383.0" prefWidth="252.0" stylesheets="@../styles/datphongstyles.css">
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="13.0" layoutY="18.0" text="Loai phòng" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="99.0" layoutY="8.0" prefHeight="29.0" prefWidth="140.0" />
+                        <Label layoutX="13.0" layoutY="54.0" text="Loai giá" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="99.0" layoutY="45.0" prefHeight="29.0" prefWidth="140.0" />
+                        <Label layoutX="13.0" layoutY="312.0" text="Ngày áp dung" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <DatePicker layoutX="99.0" layoutY="305.0" prefHeight="29.0" prefWidth="140.0" />
+                        <Label layoutX="13.0" layoutY="90.0" text="Mô ta" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="83.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="13.0" layoutY="127.0" text="Giá ngày" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="120.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="13.0" layoutY="164.0" text="Giá đêm" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="157.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="13.0" layoutY="201.0" text="Giá 1 giò" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="194.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="13.0" layoutY="238.0" text="Giá tuân" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="231.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="13.0" layoutY="275.0" text="Giá tháng" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="268.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="13.0" layoutY="349.0" text="Ngày kêt thúc" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <DatePicker layoutX="99.0" layoutY="342.0" prefHeight="29.0" prefWidth="140.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="7.0" layoutY="401.0" prefHeight="108.0" prefWidth="252.0" stylesheets="@../styles/datphongstyles.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-bg" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="13.0" layoutY="8.0" text="Phu thu thêm nguòi">
+                           <font>
+                              <Font name="Century Gothic Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="38.0" text="Nguòi lón" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="31.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="13.0" layoutY="75.0" text="Tre em" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="99.0" layoutY="68.0" prefHeight="29.0" prefWidth="140.0" styleClass="textfield" stylesheets="@../styles/datphongstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <VBox prefHeight="517.0" prefWidth="1125.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="160.0" prefWidth="372.0">
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="159.0" prefWidth="357.0" stylesheets="@../styles/datphongstyles.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <TableView layoutX="10.0" layoutY="30.0" prefHeight="118.0" prefWidth="337.0" stylesheets="@../styles/datphongstyles.css">
+                                 <columns>
+                                    <TableColumn prefWidth="50.14923095703125" text="STT" />
+                                    <TableColumn prefWidth="114.6268310546875" text="Combo" />
+                                    <TableColumn prefWidth="120.35826110839844" text="Giá" />
+                                    <TableColumn prefWidth="50.86562650786368" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-view" />
+                                    <String fx:value="table-column" />
+                                 </styleClass>
+                              </TableView>
+                              <Label layoutX="10.0" layoutY="7.0" text="Giá combo giò">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="170.0" prefWidth="580.0">
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="162.0" prefWidth="357.0" stylesheets="@../styles/datphongstyles.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <TableView layoutX="10.0" layoutY="30.0" prefHeight="120.0" prefWidth="337.0" stylesheets="@../styles/datphongstyles.css">
+                                 <columns>
+                                    <TableColumn prefWidth="50.14923095703125" text="STT" />
+                                    <TableColumn prefWidth="114.6268310546875" text="Giờ" />
+                                    <TableColumn prefWidth="120.35826110839844" text="Phần trăm giá phòng" />
+                                    <TableColumn prefWidth="50.86562650786368" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-view" />
+                                    <String fx:value="table-column" />
+                                 </styleClass>
+                              </TableView>
+                              <Label layoutX="10.0" layoutY="7.0" text="Phu trôi checkin sóm">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="188.0" prefHeight="170.0" prefWidth="580.0">
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="162.0" prefWidth="357.0" stylesheets="@../styles/datphongstyles.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <TableView layoutX="10.0" layoutY="30.0" prefHeight="120.0" prefWidth="337.0" stylesheets="@../styles/datphongstyles.css">
+                                 <columns>
+                                    <TableColumn prefWidth="50.14923095703125" text="STT" />
+                                    <TableColumn prefWidth="114.6268310546875" text="Giờ" />
+                                    <TableColumn prefWidth="120.35826110839844" text="Phần trăm giá phòng" />
+                                    <TableColumn prefWidth="50.86562650786368" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-view" />
+                                    <String fx:value="table-column" />
+                                 </styleClass>
+                              </TableView>
+                              <Label layoutX="10.0" layoutY="7.0" text="Phu trôi checkin muôn">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="7.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="39.0" prefWidth="611.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnLuu" layoutX="465.0" layoutY="3.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-save" stylesheets="@../styles/themkhachhangstyles.css" text="Lưu" />
+                  <JFXButton fx:id="btnHuy" layoutX="548.0" layoutY="3.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-cancle" stylesheets="@../styles/themkhachhangstyles.css" text="Hủy" />
+                  <JFXButton fx:id="btnLuuThem" layoutX="350.0" layoutY="3.0" prefHeight="30.0" prefWidth="109.0" styleClass="button-save-add" stylesheets="@../styles/themkhachhangstyles.css" text="Lưu và thêm" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

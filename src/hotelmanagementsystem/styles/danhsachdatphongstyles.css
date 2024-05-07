@@ -1,0 +1,199 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 2, 2024, 3:14:04 AM
+    Author     : nguye
+*/
+
+.main-form{
+    -fx-border-color:  #7791A3;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+}
+
+.top-form{
+    -fx-background-color: linear-gradient(to right, #344250, #3c6382);
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .2px .4px;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.4), 6,0,0,0);
+}
+
+.white-bg{
+    -fx-background-color: #fff;
+    -fx-background-radius: 8px;
+}
+
+.tab-header-area .tab-header-background {
+ 	-fx-background-color: #6C7D8F;
+}
+.tab-pane .tab:selected {
+	-fx-background-color: #526375;
+	-fx-background-insets: 0 0 0 0;
+	-fx-background-radius: 0 0 0 0;
+}
+.tab .tab-label { 
+ 	-fx-alignment: CENTER;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-padding: 0 10 0 10;
+}
+.tab-pane:top *.tab-header-area {
+	-fx-padding: 0 0 0 30;
+}
+.tab-pane {
+	-fx-background-color: transparent;
+	-fx-tab-min-width: 100px;
+	-fx-tab-min-height: 35px;
+	-fx-tab-max-height: 35px;
+}
+.tab-pane .tab {
+	-fx-background-color: transparent;
+}
+.tab-pane:focused .tab-header-area .headers-region .tab:selected .focus-indicator {
+ 	-fx-border-width: 0;
+	-fx-border-insets: 0 0 0 0;
+	-fx-border-radius: 0;
+}
+.tab-pane .tab:focused {
+    -fx-background-color: #526375; /* Màu nền khi focus vào tab */
+}
+* {
+	-fx-primary-color: #007acc;
+	-fx-secondary-color: #4B6EAF;
+	-fx-accent-color: #B6FF00;
+	-fx-grey-color: #b9b9b9;
+	-fx-light-grey-color: #d1d1d1;
+	-fx-lightest-grey-color: #F9F9FB;
+    
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.table-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-cursor: hand;
+}
+.table-button:hover{
+	-fx-background-color: transparent;
+}
+.table-view {
+	-fx-border-color: transparent;
+	-fx-background-color: transparent; /* OR  -fx-background-insets: 0.0; */
+}
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+	-fx-background-color: transparent;
+}
+.table-view .column-header {
+	-fx-background-color: -fx-light-grey-color;
+	-fx-border-color: -fx-grey-color;
+}
+.table-view .column-header .label{
+	-fx-font-weight: bold; 
+	-fx-alignment: center;
+}
+.table-row-cell:filled {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent -fx-lightest-grey-color -fx-lightest-grey-color -fx-lightest-grey-color, transparent;
+	-fx-border-insets: 0, 1;
+}
+.table-row-cell:empty {
+	-fx-background-color: transparent;
+}
+.table-row-cell:filled:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected {
+  	-fx-background-color: #eaeaea;
+ 	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+}
+.table-row-cell:filled:selected .table-cell {
+	-fx-text-fill: black;
+}
+.table-view .cell:filled{
+	-fx-cell-size: 30;
+	-fx-alignment: center-left;
+}
+.check-box-table-cell > .check-box:selected .box .mark {
+	-fx-background-color: white;
+}
+.check-box-table-cell > .check-box:selected .box{
+	-fx-background-color: -fx-accent-color;
+}
+.table-view .placeholder .label {
+	-fx-text-fill: red;
+	-fx-padding:20px;
+}
+
+.text-field {
+	-fx-accent: -fx-primary-color;
+	-fx-background-color: -fx-grey-color, white;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-background-radius: 0;
+}
+.text-field:focused {
+	-fx-background-color: -fx-primary-color, white;
+}
+
+.button-save {
+    -fx-background-color: #4CAF50; 
+    -fx-text-fill: white; 
+    -fx-font-size: 12px; 
+    -fx-font-weight: bold; 
+    -fx-border-color: #4CAF50; 
+}
+
+.button-save:hover {
+    -fx-background-color: #45a049; 
+    -fx-border-color: #45a049; 
+}
+
+.button-save:pressed {
+    -fx-background-color: #388e3c; 
+    -fx-border-color: #388e3c; 
+}
+
+.button-cancle {
+    -fx-background-color: #dc3545; 
+    -fx-text-fill: white; 
+    -fx-font-size: 12px; 
+    -fx-font-weight: bold; 
+    -fx-border-color: #dc3545; 
+}
+
+.button-cancle:hover {
+    -fx-background-color: #c82333;
+    -fx-border-color: #c82333; 
+}
+
+.button-cancle:pressed {
+    -fx-background-color: #bd2130; 
+    -fx-border-color: #bd2130;
+}
+
+.button-save-add {
+    -fx-background-color: #124889; 
+    -fx-text-fill: white; 
+    -fx-font-size: 12px; 
+    -fx-font-weight: bold;
+    -fx-border-color: #124889; 
+}
+
+.button-save-add:hover {
+    -fx-background-color: #0C3B64; 
+    -fx-border-color: #0C3B64; 
+}
+
+.button-save-add:pressed {
+    -fx-background-color: #0a2f4f; 
+    -fx-border-color: #0a2f4f; 
+}

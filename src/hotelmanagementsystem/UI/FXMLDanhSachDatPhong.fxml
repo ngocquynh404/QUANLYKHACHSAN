@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="460.0" prefWidth="812.0" styleClass="main-form" stylesheets="@../styles/danhsachdatphongstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.Controller.FXMLDanhSachDatPhongController">
+   <children>
+      <VBox layoutX="-10.0" layoutY="2.0" prefHeight="658.0" prefWidth="818.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="35.0" prefWidth="808.1193799796209" styleClass="top-form" stylesheets="@../styles/themkhachhangstyles.css">
+               <children>
+                  <Label layoutX="9.0" layoutY="5.0" prefHeight="35.10447661258992" prefWidth="611.1044602150857" text="Danh sách đat phòng" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_exit" layoutX="768.0" layoutY="4.0" mnemonicParsing="false" onAction="#btn_exit_Click" prefHeight="27.0" prefWidth="39.0" styleClass="close" stylesheets="@../styles/mainformstyles.css">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.5em" textAlignment="CENTER" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="1.0" prefWidth="808.0" />
+            <AnchorPane prefHeight="412.0" prefWidth="808.0">
+               <children>
+                  <TabPane layoutX="15.76119358116282" layoutY="108.0" prefHeight="528.7164028590073" prefWidth="813.8507231000439" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Danh sách đặt phòng">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane layoutX="10.0" layoutY="15.0" prefHeight="358.0" prefWidth="787.0" stylesheets="@../styles/danhsachdatphongstyles.css">
+                                       <children>
+                                          <JFXButton layoutX="640.0" layoutY="11.0" onAction="#btnChiTietDatPhong_Click" prefHeight="30.0" prefWidth="77.0" styleClass="button-save-add" stylesheets="@../styles/danhsachdatphongstyles.css" text="Chi tiết" textFill="#45a9b3">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <graphic>
+                                                <FontAwesomeIcon fill="WHITE" glyphName="FILE_TEXT" size="1.55em" wrappingWidth="18.2686767578125" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton fx:id="btnHuy" layoutX="718.0" layoutY="11.0" prefHeight="30.0" prefWidth="59.0" styleClass="button-cancle" stylesheets="@../styles/danhsachdatphongstyles.css" text="Hủy" textFill="#45a9b3">
+                                             <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </padding>
+                                             <graphic>
+                                                <FontAwesomeIcon fill="WHITE" glyphName="BAN" size="2em" wrappingWidth="21.8507080078125" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <TableView layoutX="12.0" layoutY="50.0" prefHeight="287.0" prefWidth="767.0" stylesheets="@../styles/danhsachdatphongstyles.css">
+                                             <columns>
+                                                <TableColumn prefWidth="40.11941337585449" text="STT" />
+                                                <TableColumn prefWidth="151.88056182861328" text="Khách hàng" />
+                                                <TableColumn prefWidth="111.76115417480469" text="Số điện thoại" />
+                                                <TableColumn prefWidth="122.5074462890625" text="Số lượng phòng" />
+                                                <TableColumn prefWidth="123.94033813476562" text="Số lượng người" />
+                                                <TableColumn minWidth="0.0" prefWidth="106.746337890625" text="Loại hình" />
+                                                <TableColumn prefWidth="106.02983710207695" text="Trả trước" />
+                                             </columns>
+                                          </TableView>
+                                          <DatePicker layoutX="245.0" layoutY="11.0" prefHeight="30.0" prefWidth="124.0" stylesheets="@../styles/themkhachhangstyles.css" />
+                                          <TextField layoutX="12.0" layoutY="11.0" prefHeight="30.0" prefWidth="198.0" />
+                                          <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="183.0" layoutY="11.0" prefHeight="30.0" prefWidth="27.0" text="Button">
+                                             <graphic>
+                                                <FontAwesomeIcon glyphName="SEARCH" size="2em" wrappingWidth="19.20910930633545" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <DatePicker layoutX="377.0" layoutY="11.0" prefHeight="30.0" prefWidth="124.0" stylesheets="@../styles/themkhachhangstyles.css" />
+                                          <JFXButton layoutX="532.0" layoutY="11.0" prefHeight="30.0" prefWidth="107.0" styleClass="button-save" stylesheets="@../styles/danhsachdatphongstyles.css" text="Nhan phòng" textFill="#45a9b3">
+                                             <font>
+                                                <Font name="Algerian" size="9.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="2em" wrappingWidth="23.2835693359375" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </padding>
+                                          </JFXButton>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Danh sách đang thuê">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <AnchorPane layoutX="10.0" layoutY="15.0" prefHeight="345.0" prefWidth="786.0" stylesheets="@../styles/danhsachdatphongstyles.css">
+                                       <children>
+                                          <JFXButton layoutX="640.0" layoutY="11.0" onAction="#btnChiTietThuePhong_Click" prefHeight="30.0" prefWidth="77.0" styleClass="button-save-add" stylesheets="@../styles/danhsachdatphongstyles.css" text="Chi tiết" textFill="#45a9b3">
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                             <graphic>
+                                                <FontAwesomeIcon fill="WHITE" glyphName="FILE_TEXT" size="1.55em" wrappingWidth="18.2686767578125" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <JFXButton layoutX="718.0" layoutY="11.0" prefHeight="30.0" prefWidth="59.0" styleClass="button-cancle" stylesheets="@../styles/danhsachdatphongstyles.css" text="Hủy" textFill="#45a9b3">
+                                             <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </padding>
+                                             <graphic>
+                                                <FontAwesomeIcon fill="WHITE" glyphName="BAN" size="2em" wrappingWidth="21.8507080078125" />
+                                             </graphic>
+                                          </JFXButton>
+                                          <TableView layoutX="12.0" layoutY="50.0" prefHeight="287.0" prefWidth="767.0" stylesheets="@../styles/danhsachdatphongstyles.css">
+                                             <columns>
+                                                <TableColumn prefWidth="40.11941337585449" text="STT" />
+                                                <TableColumn prefWidth="151.88056182861328" text="Khách hàng" />
+                                                <TableColumn prefWidth="111.76115417480469" text="Số điện thoại" />
+                                                <TableColumn prefWidth="122.5074462890625" text="Số lượng phòng" />
+                                                <TableColumn prefWidth="123.94033813476562" text="Số lượng người" />
+                                                <TableColumn minWidth="0.0" prefWidth="106.746337890625" text="Loại hình" />
+                                                <TableColumn prefWidth="106.02983710207695" text="Trả trước" />
+                                             </columns>
+                                          </TableView>
+                                          <DatePicker layoutX="245.0" layoutY="11.0" prefHeight="30.0" prefWidth="124.0" stylesheets="@../styles/themkhachhangstyles.css" />
+                                          <TextField layoutX="12.0" layoutY="11.0" prefHeight="30.0" prefWidth="198.0" />
+                                          <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="183.0" layoutY="11.0" prefHeight="30.0" prefWidth="27.0" text="Button">
+                                             <graphic>
+                                                <FontAwesomeIcon glyphName="SEARCH" size="2em" wrappingWidth="19.20910930633545" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                             </padding>
+                                          </JFXButton>
+                                          <DatePicker layoutX="377.0" layoutY="11.0" prefHeight="30.0" prefWidth="124.0" stylesheets="@../styles/themkhachhangstyles.css" />
+                                          <JFXButton layoutX="532.0" layoutY="11.0" onAction="#btnTraphong_Click" prefHeight="30.0" prefWidth="107.0" styleClass="button-save" stylesheets="@../styles/danhsachdatphongstyles.css" text="Trả phòng" textFill="#45a9b3">
+                                             <font>
+                                                <Font name="Algerian" size="9.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="2em" wrappingWidth="23.2835693359375" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </padding>
+                                          </JFXButton>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

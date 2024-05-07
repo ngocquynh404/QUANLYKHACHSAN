@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="291.0" prefWidth="485.0" styleClass="main-form" stylesheets="@../styles/themkhachhangstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.Controller.FXMLChiTietPhongController">
+   <children>
+      <VBox layoutX="262.0" layoutY="73.0" prefHeight="340.29849777510634" prefWidth="548.0596858904345" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="35.0" prefWidth="200.0" styleClass="top-form" stylesheets="@../styles/themkhachhangstyles.css">
+               <children>
+                  <Label layoutX="9.0" layoutY="5.0" text="Phòng" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_exit" layoutX="434.0" layoutY="4.0" mnemonicParsing="false" onAction="#btn_exit_Click" prefHeight="27.0" prefWidth="39.0" styleClass="close" stylesheets="@../styles/mainformstyles.css">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.5em" textAlignment="CENTER" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="215.0" prefWidth="548.0">
+               <children>
+                  <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="196.0" prefWidth="466.0" stylesheets="@../styles/themkhachhangstyles.css">
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="14.0" layoutY="18.0" text="Mã phòng" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="100.0" layoutY="11.0" prefHeight="29.0" prefWidth="350.0" styleClass="textfield" stylesheets="@../styles/themkhachhangstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="14.0" layoutY="54.0" text="Tên phòng" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="100.0" layoutY="47.0" prefHeight="29.0" prefWidth="350.0" styleClass="textfield" stylesheets="@../styles/themkhachhangstyles.css">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="14.0" layoutY="162.0" text="Trang thái" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="90.0" text="Loai phòng" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="126.0" text="Tâng" textFill="#7a7373">
+                           <font>
+                              <Font name="Century Gothic Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="100.0" layoutY="83.0" prefHeight="29.0" prefWidth="350.0" />
+                        <ComboBox layoutX="100.0" layoutY="155.0" prefHeight="29.0" prefWidth="350.0" />
+                        <ComboBox layoutX="100.0" layoutY="119.0" prefHeight="29.0" prefWidth="350.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="48.0" prefWidth="548.0">
+               <children>
+                  <JFXButton fx:id="btnLuu" layoutX="297.0" layoutY="4.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-save" stylesheets="@../styles/themkhachhangstyles.css" text="Lưu" />
+                  <JFXButton fx:id="btnHuy" layoutX="380.0" layoutY="4.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-cancle" stylesheets="@../styles/themkhachhangstyles.css" text="Hủy" />
+                  <JFXButton fx:id="btnLuuThem1" layoutX="199.0" layoutY="4.0" prefHeight="30.0" prefWidth="92.0" styleClass="button-save-add" stylesheets="@../styles/themkhachhangstyles.css" text="Chỉnh sửa" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

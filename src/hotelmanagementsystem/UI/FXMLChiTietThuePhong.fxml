@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="698.0" styleClass="main-form" stylesheets="@../styles/chitietthuephongstyles.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="hotelmanagementsystem.Controller.FXMLChiTietThuePhongController">
+   <children>
+      <VBox layoutX="114.0" layoutY="74.0" prefHeight="500.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="35.0" prefWidth="711.0">
+               <children>
+                  <AnchorPane prefHeight="114.62686240845687" prefWidth="710.6865469324326" styleClass="top-form" stylesheets="@../styles/datphongstyles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="9.0" layoutY="5.0" text="Chi tiet thue phòng" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_exit" layoutX="652.0" mnemonicParsing="false" onAction="#btn_exit_Click" prefHeight="27.0" prefWidth="39.0" styleClass="close" stylesheets="@../styles/mainformstyles.css">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.5em" textAlignment="CENTER" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="141.0" prefWidth="694.0" styleClass="white-bg" stylesheets="@../styles/chitietthuephongstyles.css">
+               <children>
+                  <Pane layoutX="14.0" layoutY="1.0" prefHeight="118.0" prefWidth="160.0" styleClass="pane-room" stylesheets="@../styles/chitietthuephongstyles.css">
+                     <children>
+                        <Label layoutX="26.0" layoutY="17.0" text="301" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="64.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="224.0" layoutY="27.0" text="Mã phòng:" textFill="#696565" />
+                  <Label layoutX="288.0" layoutY="27.0" text="301" textFill="#696565" />
+                  <Label layoutX="224.0" layoutY="44.0" text="Loại phòng:" textFill="#696565" />
+                  <Label layoutX="298.0" layoutY="44.0" text="Deluxe Twin" textFill="#696565" />
+                  <Label layoutX="224.0" layoutY="62.0" text="Tầng:" textFill="#696565" />
+                  <Label layoutX="260.0" layoutY="62.0" text="3" textFill="#696565" />
+                  <Label layoutX="224.0" layoutY="79.0" text="Giá phòng:" textFill="#696565" />
+                  <Label layoutX="288.0" layoutY="79.0" text="1,250,000đ" textFill="#696565" />
+                  <Label layoutX="224.0" layoutY="96.0" text="Thời gian:" textFill="#696565" />
+                  <Label layoutX="284.0" layoutY="96.0" text="14/05/2024 9:00PM - 15/05/2024 12:00PM" textFill="#696565" />
+                  <Label layoutX="224.0" layoutY="10.0" text="Khách đặt phòng:" textFill="#696565" />
+                  <Label layoutX="326.0" layoutY="10.0" text="Ma Thị Ngọc Quỳnh" textFill="#696565" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="6.0" prefWidth="694.0" />
+            <AnchorPane prefHeight="269.0" prefWidth="694.0">
+               <children>
+                  <HBox layoutX="110.0" layoutY="35.0" prefHeight="269.37312665987366" prefWidth="694.2089354612169" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="269.0" prefWidth="443.0" stylesheets="@../styles/chitietthuephongstyles.css">
+                           <children>
+                              <Label layoutX="14.0" layoutY="2.0" text="Danh sách khách hàng" textFill="#4a4646">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TableView layoutX="5.0" layoutY="25.0" prefHeight="239.0" prefWidth="431.0" stylesheets="@../styles/datphongstyles.css">
+                                 <columns>
+                                    <TableColumn prefWidth="37.970157623291016" text="STT" />
+                                    <TableColumn prefWidth="133.2537384033203" text="Khách hàng" />
+                                    <TableColumn prefWidth="86.68649291992188" text="Số điện thoại" />
+                                    <TableColumn prefWidth="100.29852294921875" text="CCCD/Passport" />
+                                    <TableColumn prefWidth="71.6417236328125" text="Quốc tịch" />
+                                 </columns>
+                                 <styleClass>
+                                    <String fx:value="table-view" />
+                                    <String fx:value="table-column" />
+                                 </styleClass>
+                              </TableView>
+                           </children>
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="269.0" prefWidth="6.0" />
+                        <AnchorPane prefHeight="269.0" prefWidth="245.0" stylesheets="@../styles/chitietthuephongstyles.css">
+                           <children>
+                              <Pane layoutX="18.0" layoutY="25.0" prefHeight="118.0" prefWidth="209.0" stylesheets="@../styles/datphongstyles.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <ImageView fitHeight="148.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </Pane>
+                              <Label layoutX="18.0" layoutY="168.0" text="Giới tính:" textFill="#696565" />
+                              <Label layoutX="76.0" layoutY="168.0" text="Nữ" textFill="#696565" />
+                              <Label layoutX="18.0" layoutY="185.0" text="Ngày sinh:" textFill="#696565" />
+                              <Label layoutX="85.0" layoutY="185.0" text="13/04/2003" textFill="#696565" />
+                              <Label layoutX="18.0" layoutY="203.0" text="Số điện thoại:" textFill="#696565" />
+                              <Label layoutX="101.0" layoutY="203.0" text="0392960141" textFill="#696565" />
+                              <Label layoutX="18.0" layoutY="220.0" text="CCCD/Passport:" textFill="#696565" />
+                              <Label layoutX="112.0" layoutY="220.0" text="054352634765" textFill="#696565" />
+                              <Label layoutX="18.0" layoutY="237.0" text="Quốc tịch:" textFill="#696565" />
+                              <Label layoutX="78.0" layoutY="237.0" text="Việt Nam" textFill="#696565" />
+                              <Label layoutX="18.0" layoutY="151.0" text="Khách hàng:" textFill="#696565" />
+                              <Label layoutX="91.0" layoutY="151.0" text="Ma Thị Ngọc Quỳnh" textFill="#696565" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="39.0" prefWidth="611.0">
+               <children>
+                  <JFXButton fx:id="btnLuu" layoutX="504.0" layoutY="7.0" prefHeight="30.0" prefWidth="95.0" styleClass="button-save" stylesheets="@../styles/themkhachhangstyles.css" text="Chỉnh sửa" />
+                  <JFXButton fx:id="btnHuy" layoutX="605.0" layoutY="7.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-cancle" stylesheets="@../styles/themkhachhangstyles.css" text="Hủy" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

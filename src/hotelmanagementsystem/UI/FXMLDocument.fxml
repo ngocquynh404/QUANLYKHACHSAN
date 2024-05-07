@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.Controller.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <AnchorPane layoutX="400.0" prefHeight="500.0" prefWidth="400.0" styleClass="right_form" stylesheets="@../styles/styles.css">
+               <children>
+                  <Pane layoutX="8.0" layoutY="73.0" prefHeight="335.0" prefWidth="383.0" stylesheets="@../styles/styles.css">
+                     <children>
+                        <TextField fx:id="txt_username" layoutX="43.0" layoutY="127.0" prefHeight="43.0" prefWidth="298.0" promptText="Username" styleClass="textfield" stylesheets="@../styles/styles.css">
+                           <font>
+                              <Font name="Century Gothic Bold" size="14.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton fx:id="btn_login" layoutX="43.0" layoutY="253.0" onAction="#btn_login_Click" prefHeight="68.0" prefWidth="298.0" styleClass="login_btn" stylesheets="@../styles/styles.css" text="Login">
+                           <font>
+                              <Font name="Century Gothic Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="99.0" layoutY="61.0" text="Welcome back!" textFill="#043442">
+                           <font>
+                              <Font name="Century Gothic Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="txt_password" layoutX="43.0" layoutY="188.0" prefHeight="43.0" prefWidth="298.0" promptText="Password" styleClass="textfield" stylesheets="@../styles/styles.css">
+                           <font>
+                              <Font name="Century Gothic Bold" size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <FontAwesomeIcon glyphName="USER" layoutX="167.0" layoutY="52.0" size="5em" />
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="btn_close" contentDisplay="GRAPHIC_ONLY" layoutX="339.0" layoutY="6.0" onAction="#btn_close_Click" prefHeight="44.0" prefWidth="48.0" styleClass="close" stylesheets="@../styles/styles.css">
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/loschen.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="500.0" prefWidth="400.0" styleClass="left-form" stylesheets="@../styles/styles.css">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="47.0" layoutX="10.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/verknupfungsskript-app.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="60.0" layoutY="15.0" text="Hotel Management System" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="265.0" fitWidth="258.0" layoutX="71.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/pngwing.com%20(19).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="822.0" styleClass="main-form" stylesheets="@../styles/chitietthuephongstyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.Controller.FXMLThemThuePhongController">
+   <children>
+      <VBox layoutX="564.0" layoutY="91.0" prefHeight="615.0" prefWidth="1110.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="35.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="200.59700921479953" prefWidth="1110.447729581926" styleClass="top-form" stylesheets="@../styles/datphongstyles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="9.0" layoutY="5.0" text="Dat phong" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="471.0" prefWidth="822.0">
+               <children>
+                  <AnchorPane fx:id="subformSodophong" layoutX="8.0" layoutY="67.0" prefHeight="396.0" prefWidth="805.0" stylesheets="@../styles/mainformstyles.css">
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <AnchorPane layoutX="9.0" layoutY="9.0" prefHeight="379.0" prefWidth="777.0">
+                           <children>
+                              <GridPane hgap="3.0" layoutX="15.0" layoutY="5.0" prefHeight="373.2537207175377" prefWidth="753.671620335604" style="-fx-background-color: #a9c4dc;" vgap="3.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css">
+                                       <children>
+                                          <Label layoutX="44.0" layoutY="39.0" text="Tầng" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="1">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" prefHeight="95.28357937702978" prefWidth="130.3880559896197" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <contextMenu>
+                                                <ContextMenu>
+                                                   <items>
+                                                      <MenuItem mnemonicParsing="false" onAction="#btnChiTietThemThuePhong_Click" text="Chi tiết" />
+                                                   </items>
+                                                </ContextMenu>
+                                             </contextMenu>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.rowIndex="1" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="2">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.rowIndex="2" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.rowIndex="3" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.rowIndex="4" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.rowIndex="5" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="3">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="4">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="5" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="7" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="6" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                       <children>
+                                          <JFXButton layoutX="39.0" layoutY="35.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-pane-empty" stylesheets="@../styles/mainformstyles.css" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="5.0" prefHeight="51.0" prefWidth="822.0" stylesheets="@../styles/mainformstyles.css">
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <JFXButton alignment="CENTER" layoutX="591.0" layoutY="5.0" styleClass="signal_btn" stylesheets="@../styles/mainformstyles.css" text="0" textFill="#344250">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/furniture.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" layoutX="511.0" layoutY="4.0" styleClass="signal_btn" stylesheets="@../styles/mainformstyles.css" text="0" textFill="#90242f">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/sleeping.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" layoutX="738.0" layoutY="9.0" styleClass="signal_btn" stylesheets="@../styles/mainformstyles.css" text="0" textFill="#a6a0a0">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/repair.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" layoutX="667.0" layoutY="9.0" styleClass="signal_btn" stylesheets="@../styles/mainformstyles.css" text="0" textFill="#45a9b3">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/enter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <DatePicker layoutX="155.0" layoutY="12.0" prefHeight="27.0" prefWidth="138.0" stylesheets="@../styles/mainformstyles.css">
+                           <styleClass>
+                              <String fx:value="date-picker" />
+                              <String fx:value="date-picker-popup" />
+                           </styleClass>
+                        </DatePicker>
+                        <DatePicker layoutX="14.0" layoutY="12.0" prefHeight="27.0" prefWidth="138.0" stylesheets="@../styles/mainformstyles.css">
+                           <styleClass>
+                              <String fx:value="date-picker" />
+                              <String fx:value="date-picker-popup" />
+                           </styleClass>
+                        </DatePicker>
+                        <JFXButton fx:id="btnSodophong" alignment="CENTER" layoutX="444.0" layoutY="3.0" onAction="#btnSodophong_Click" prefHeight="47.0" prefWidth="67.0" styleClass="signal_btn" stylesheets="@../styles/mainformstyles.css" text="0">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/grid.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXComboBox layoutX="336.0" layoutY="13.0" prefHeight="26.0" prefWidth="95.0" promptText="Tầng" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="39.0" prefWidth="611.0">
+               <children>
+                  <JFXButton fx:id="btnLuu" layoutX="655.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-save" stylesheets="@../styles/themkhachhangstyles.css" text="Lưu" />
+                  <JFXButton fx:id="btnHuy" layoutX="738.0" prefHeight="30.0" prefWidth="77.0" styleClass="button-cancle" stylesheets="@../styles/themkhachhangstyles.css" text="Hủy" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Button fx:id="btn_exit" layoutX="782.0" layoutY="3.0" mnemonicParsing="false" onAction="#btn_exit_Click" prefHeight="27.0" prefWidth="39.0" styleClass="close" stylesheets="@../styles/mainformstyles.css">
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.5em" textAlignment="CENTER" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
